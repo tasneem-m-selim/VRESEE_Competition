@@ -35,7 +35,7 @@ jobs:
       - name: Checkout private labels
         uses: actions/checkout@v4
         with:
-          repository: tasneem-mselim/hlm-vision-private
+          repository: tasneem-mselim/Engagement_Competition_private
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private_data
           sparse-checkout: |
@@ -98,7 +98,7 @@ jobs:
           GITHUB_ACTOR: ${{ github.actor }}
         run: |
           cd main_repo
-          python evaluate.py decrypted.csv ../private_data/emoCK.csv
+          python evaluate.py decrypted.csv ../private_data/vresee_groundTruth.csv
 
       # 10. Generate leaderboard HTML
       - name: Generate leaderboard
