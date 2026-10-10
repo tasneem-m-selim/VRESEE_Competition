@@ -16,13 +16,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+          
       # 1. Checkout PR (submission only)
       - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.event.pull_request.head.sha }}
           path: pr_repo
+          persist-credentials: false
+          allow-unsafe-pr-checkout: true
+          
 
       # 2. Checkout main repo (leaderboard + code)
       - name: Checkout main repo
