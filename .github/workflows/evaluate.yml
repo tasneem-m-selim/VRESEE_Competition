@@ -6,6 +6,11 @@ on:
     paths:
       - "submission/*.enc"
       - "submission/*.enc.key"
+  push:
+    branches: [main]
+    paths:
+      - "final_leaderboard.csv"
+  
 
 permissions:
   contents: write
