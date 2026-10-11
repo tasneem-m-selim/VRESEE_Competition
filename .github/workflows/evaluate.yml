@@ -137,3 +137,34 @@ jobs:
       # 12. Cleanup
       - name: Cleanup
         run: rm -f private_key.pem
+
+  rebuild:
+    if: github.event_name != 'pull_request_target'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - run: pip install pandas
+
+      - name: Generate leaderboard
+        run: python generate_leaderboard_html.py
+
+      - name: Commit index.html
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Rebuild leaderboard HTML"
+            git push origin HEAD:main
+          else
+            echo "No changes"
+          fi
+
