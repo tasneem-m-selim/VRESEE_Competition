@@ -181,7 +181,7 @@ A starter notebook (`starter_code.ipynb`) with a simple **1D-CNN** in Keras is p
 * Attention mechanisms
 * Regularization techniques (dropout, batch norm, early stopping)
 * Feature selection to reduce the 670 columns
-* Class balancing and data augmentation
+* data augmentation
 
 ---
 
