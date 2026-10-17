@@ -26,7 +26,7 @@ Each video is provided as a **sequence of 300 frames with 670 features per frame
 
 ### Objective
 
-Train a model that accurately predicts the class label of **unlabeled test videos**, using:
+Train a model that accurately predicts the class label of **labeled test videos**, using:
 
 * The frame-level features in each video CSV
 * The temporal order of the frames
@@ -45,7 +45,7 @@ The dataset is derived from the **VRESEE** videos. Features were extracted from 
 | Classes           | 4 (`0`, `1`, `2`, `3`)               |
 | Train videos      | 180 (45 per class)                   |
 | Validation videos | 45 (12 / 11 / 11 / 11 per class)     |
-| Test videos       | 76 (labels hidden)                   |
+| Test videos       | 75 (labels hidden)                   |
 
 ### Feature columns
 
@@ -113,8 +113,6 @@ Follow the steps below to submit your predictions to the competition leaderboard
 
 ### Step 4: Prepare the prediction .csv locally
 
-You can start from `test/prediction.csv` and fill in the `label` column, or run the starter notebook, which writes a new `prediction.csv` for you without modifying the original.
-
 #### 📝 Submission Format
 
 Participants must submit a CSV file named **`prediction.csv`** with the following format:
@@ -137,7 +135,7 @@ person25_010,3
 
 Upload your `prediction.csv` to the submission folder in your forked repo.
 
-> If the competition uses encrypted submissions, first run:
+> Encrypt the submissions, first run:
 > `python encrypt_submission.py prediction.csv prediction.enc public_key.pem`
 > and upload both `prediction.enc` and `prediction.enc.key` instead of the CSV.
 
@@ -154,6 +152,7 @@ Upload your `prediction.csv` to the submission folder in your forked repo.
 Submissions are evaluated using:
 
 * **Accuracy**
+* **F1-Score**
 
 Evaluation is performed on a **hidden test set** to prevent data leakage.
 
@@ -188,20 +187,13 @@ A starter notebook (`starter_code.ipynb`) with a simple **1D-CNN** in Keras is p
 
 ---
 
-## 📚 References
-
-* Baltrusaitis, T., Zadeh, A., Lim, Y. C., & Morency, L.-P. (2018). *OpenFace 2.0: Facial Behavior Analysis Toolkit*. IEEE FG. (the feature columns follow the OpenFace format)
-
----
-
 ## 👩‍💻 Organizer
 
-**YOUR NAME**
-YOUR TITLE / AFFILIATION
+**Tasneem Selim**
 If you face issues with the repository or evaluation:
-- Contact me at YOUR_EMAIL
+- tasneem.mselim@gmail
 
 ---
 
-Good luck, and happy learning 🚀
+Good luck, and happy coding 🚀
 
