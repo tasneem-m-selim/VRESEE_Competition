@@ -1,7 +1,5 @@
 # VRESEE_Competition
 
-leaderboard https://tasneem-mselim.github.io/VRESEE_Competition/
-
 # VRESEE Video Classification Challenge
 
 ## 📌 Overview
@@ -16,7 +14,7 @@ Each video is provided as a **sequence of 300 frames with 670 features per frame
 
 - Leaderboard scores are automatically updated based on accuracy.
 - View the live leaderboard:
-👉 **[Leaderboard](LEADERBOARD_LINK_HERE)**
+👉 **[Leaderboard](https://tasneem-mselim.github.io/VRESEE_Competition/)**
 
 ---
 
