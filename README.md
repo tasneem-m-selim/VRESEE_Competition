@@ -20,7 +20,7 @@ Each video is provided as a **sequence of 300 frames with 670 features per frame
 
 * Each CSV file represents **one video**.
 * Each row in a CSV is **one video frame**, and each column is an extracted feature (gaze, eye landmarks, head pose, face landmarks, action units, ...).
-* Each video belongs to **one of 4 classes**: `0`, `1`, `2`, `3` (CLASS_MEANING_HERE).
+* Each video belongs to **one of 4 classes**: `0`, `1`, `2`, `3` (Very high, high, low, very low engagement level).
 
 ### Objective
 
