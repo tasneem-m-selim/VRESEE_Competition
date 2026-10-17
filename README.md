@@ -1,6 +1,5 @@
-# VRESEE_Competition
+# VRESEE Video Classification Competition
 
-# VRESEE Video Classification Challenge
 
 ## 📌 Overview
 
