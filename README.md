@@ -1,6 +1,5 @@
 # VRESEE Video Classification Competition
 
-
 ## 📌 Overview
 
 This repository hosts the **VRESEE Video Classification Challenge**, a deep learning competition based on features extracted from the **VRESEE** videos. Participants are required to design and train **deep learning models** (e.g., 1D-CNN, LSTM/GRU, Transformer) to classify each video into one of **four classes** using the frame-level features extracted from it.
