@@ -1,10 +1,11 @@
 Team,Accuracy,F1-Score
+tasneem-m-selim,33.33,33.09
 qwen3-coder,30.67,26.61
 qwen2.5-coder:14b,28.0,26.58
 devstral-small-2:latest,28.0,26.94
 deepcoder:14b,26.67,19.12
-deepseek-r1:14b,25.33,10.11
 qwen2.5-coder:32b,25.33,10.11
+deepseek-r1:14b,25.33,10.11
 qwen3:14b,24.0,17.42
 GPT-OSS:20B,24.0,9.68
 gemini-3-flash-preview,24.0,23.93
